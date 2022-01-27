@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: #444;
+}
+img{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+.cf, .cf:before, .cf:after{
+	clear: both;
+	display: table;
+}
+.container{
+    width: 94%;
+    margin: auto;
+	padding: 30px 0;
+	display: table;	
+}
+.one-third{
+	width: 100%;
+	float: left;
+}
+header{
+	width: 100%;
+	float: left;
+	position: relative;
+}
+header .logo{
+	width: 180px;
+	float: left;
+}
+nav{
+	float: right;
+    margin-top: 5px;
+}
+nav ul{
+	display: none;
+}
+nav ul li{
+	list-style: none;
+	float: left;
+	padding: 5px;
+    font-size: 14px;
+}
+nav ul li a{
+	color: #444;
+	text-transform: uppercase;
+}
+nav .nav-toggle{
+	display: inline-block;
+    float: right;
+    font-size: 36px;
+    
+}
+section{
+	width: 100%;
+	float: left;
+	position: relative;
+	padding: 20px 0;
+	text-align: center;
+}
+section h4{
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+section#banner{
+	background: url('../img/banner1.jpg') no-repeat fixed center;
+	background-size: cover;
+}
+@keyframes fixed-header{
+    0%{
+        top: -50px;
+        opacity: 0;
+    }
+    100%{
+        top:0;
+        opacity: 1;
+    }
+}
+.fixed{
+    position: fixed;
+    top:0;
+    width: 100%;
+    animation: fixed-header .5s linear;
+}
+section#banner .case{
+	margin: auto;
+	text-align: center;
+	color: #fff;
+	padding: 30px 0;
+}
+section#banner .case img{
+	max-width: 300px;
+}
+section#banner .case h1{
+	font-size: 60px;
+	font-weight: 800;
+}
+section#banner .case p{
+	font-size: 24px;
+	font-weight: 400;
+	padding-bottom: 40px;
+}
+section#banner .case a{
+	color: #fff;
+	font-size: 35px;
+	display: inline-block;
+}
+section#about{
+	background-color: #d0A650;
+}
+section#features .case{
+	padding: 30px;
+}
+section#features .info{
+	margin-top: 20px;
+}
+section#nature{
+	background: url('../img/banner2.jpg') no-repeat fixed center;
+	background-size: cover;
+	color: #fff;
+}
+section#nature .case{
+	padding: 15px 25px;
+}
+section#nature img{
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+section#nature figcaption{
+	text-transform: uppercase;
+}
+section#contact .form{
+	background-color: #f2f2f2;
+	border-top: 5px solid #d0A650;
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	padding: 35px;
+}
+section#contact .form-group{
+	padding-bottom: 10px;
+}
+section#contact .half{
+	width: 50%;
+	float: left;
+	padding-right: 10px
+}
+section#contact .last{
+	padding-right: 0	
+}
+section#contact input, section#contact textarea{
+	width: 100%;
+	padding: 10px;
+}
+section#contact input[type='submit']{
+	width: 300px;
+	border: 1px solid #d0A650;
+	color: #d0A650;
+	background-color: transparent;
+	padding-right: 25px;
+	padding-left: 25px;
+	display: block;
+}
+section#contact input[type='submit']:hover{
+	background-color: #d0A650;	
+	color: #333;
+}
+footer{
+	width: 100%;
+	float: left;
+	position: relative;
+	background-color: #244AA5;
+}
+footer ul{
+	padding:20px;
+	list-style: none;
+	width: 340px;
+	margin: auto;
+}
+footer ul li{
+	float: left;
+	font-size: 34px;
+	padding: 15px;
+}
+footer ul li a{
+	color: #d0A650;
+	text-decoration: none;	
+}
+footer ul li a:hover{
+	color: #fff;
+}
+
+/* Responsive ...*/
+
+@media(min-width: 450px){
+    .one-third{
+        width: 50%;
+        float: left;
+    }
+}
+@media (min-width: 768px){
+	nav .nav-toggle{
+		display: none;
+	}
+	nav ul{
+		display: block;
+	}
+	.one-third{
+		width: 33.33%
+		float: left;
+	}
+}
+@media (min-width: 992px){
+	.container{
+	max-width: 960px;
+    }
+    .one-third{
+        width: 33.33%;
+        float: left;
+    }
+}
+@media (min-width: 1200px){
+	
+}
